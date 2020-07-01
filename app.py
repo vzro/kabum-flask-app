@@ -10,5 +10,9 @@ def index():
 def about():
     return render_template('about.html')
 
+@app.route('/products')
+def products():
+    return render_template('products.html')
+
 if __name__ == "__main__":
     app.run(debug=True, host='192.168.254.253', port=5000)
