@@ -1,6 +1,9 @@
 from flask import Flask, render_template
+from data import Products
 
 app = Flask(__name__)
+
+Products = Products()
 
 @app.route('/')
 def index():
@@ -12,7 +15,7 @@ def about():
 
 @app.route('/products')
 def products():
-    return render_template('products.html')
+    return render_template('products.html', products = Products)
 
 if __name__ == "__main__":
     app.run(debug=True, host='192.168.254.253', port=5000)
