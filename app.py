@@ -18,4 +18,4 @@ def products():
     return render_template('products.html', products = Products)
 
 if __name__ == "__main__":
-    app.run(debug=True, host='192.168.254.253', port=5000)
+    app.run(debug=True, host='0.0.0.0')

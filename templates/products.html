@@ -1,10 +1,10 @@
 {% extends 'layout.html' %}
 
 {% block body %}
-    <div class="wrapper" style="background-color: rgba(255,255,255, 0.85); padding: 20px; border-radius: 5px;">
-        <div class="card-deck">    
+    <div class="wrapper" style="background-color: rgba(255,255,255, 0.85); padding: 20px; border-radius: 5px; box-shadow: #000 0px 10px 25px 0px;">
+        <div class="card-deck">
             {% for product in products %}
-                <div class="card">
+                <div class="card" style="box-shadow: #999 0px 0px 10px 0px; margin-bottom: 80px;">
                     <img src="{{ product.image }}" class="card-img-top img-fluid" alt="{{ product.name }}">
                     <div class="card-body">
                     <h5 class="card-title">{{ product.name }}</h5>
